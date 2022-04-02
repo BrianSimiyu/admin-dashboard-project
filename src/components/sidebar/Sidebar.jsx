@@ -6,6 +6,7 @@ import { FaTruckMoving } from "react-icons/fa";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { RiLogoutBoxRLine } from "react-icons/ri";
+import { AiOutlineCreditCard } from "react-icons/ai";
 import "./sidebar.scss";
 
 const Sidebar = () => {
@@ -18,36 +19,37 @@ const Sidebar = () => {
       <div className="center">
         <ul>
           <li>
-            <MdOutlineDashboard />
+            <MdOutlineDashboard className="icon" />
             <span>Dashboard</span>
           </li>
           <li>
-            <FiUsers />
+            <FiUsers className="icon" />
             <span>Users</span>
           </li>
           <li>
-            <AiTwotoneShop />
+            <AiTwotoneShop className="icon" />
             <span>Products</span>
           </li>
           <li>
+            <AiOutlineCreditCard className="icon" />
             <span>Orders</span>
           </li>
           <li>
-            <FaTruckMoving />
+            <FaTruckMoving className="icon" />
             <span>Delivery</span>
           </li>
 
           <li>
-            <IoMdNotificationsOutline />
+            <IoMdNotificationsOutline className="icon" />
             <span>Notifcations</span>
           </li>
 
           <li>
-            <CgProfile />
+            <CgProfile className="icon" />
             <span>Profile</span>
           </li>
           <li>
-            <RiLogoutBoxRLine />
+            <RiLogoutBoxRLine className="icon" />
             <span>Logout</span>
           </li>
         </ul>

@@ -26,6 +26,26 @@
       list-style: none;
       margin: 0;
       padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ece8ff;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: #7451f8;
+        }
+
+        span {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }
