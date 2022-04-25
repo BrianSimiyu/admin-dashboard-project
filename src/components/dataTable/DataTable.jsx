@@ -24,6 +24,7 @@ const DataTable = () => {
     <div className="dataTable">
       <DataGrid
         rows={userRows}
+        disableSelectionOnClick
         columns={userColumns.concat(actionColumn)}
         pageSize={5}
         rowsPerPageOptions={[5]}
