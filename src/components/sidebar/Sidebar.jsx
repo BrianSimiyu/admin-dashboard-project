@@ -8,28 +8,40 @@ import { CgProfile } from "react-icons/cg";
 import { RiLogoutBoxRLine } from "react-icons/ri";
 import { AiOutlineCreditCard } from "react-icons/ai";
 import "./sidebar.scss";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Dirä Admin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">Dirä Admin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
-          <li>
-            <MdOutlineDashboard className="icon" />
-            <span>Dashboard</span>
-          </li>
-          <li>
-            <FiUsers className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <AiTwotoneShop className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li>
+              <MdOutlineDashboard className="icon" />
+              <span>Dashboard</span>
+            </li>
+          </Link>
+
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <FiUsers className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <AiTwotoneShop className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
+
           <li>
             <AiOutlineCreditCard className="icon" />
             <span>Orders</span>
